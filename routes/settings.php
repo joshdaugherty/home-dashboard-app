@@ -14,4 +14,3 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::livewire('settings/security', 'pages::settings.security')
         ->name('security.edit');
 });
-

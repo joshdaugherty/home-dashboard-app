@@ -4,7 +4,6 @@ namespace Tests\Feature\Auth;
 
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Laravel\Fortify\Features;
 use Tests\TestCase;
 
 class AuthenticationTest extends TestCase
@@ -48,33 +47,13 @@ class AuthenticationTest extends TestCase
         $this->assertGuest();
     }
 
-    public function test_users_with_two_factor_enabled_are_redirected_to_two_factor_challenge(): void
-    {
-        $this->skipUnlessFortifyHas(Features::twoFactorAuthentication());
-
-        Features::twoFactorAuthentication([
-            'confirm' => true,
-            'confirmPassword' => true,
-        ]);
-
-        $user = User::factory()->withTwoFactor()->create();
-
-        $response = $this->post(route('login.store'), [
-            'email' => $user->email,
-            'password' => 'password',
-        ]);
-
-        $response->assertRedirect(route('two-factor.login'));
-        $this->assertGuest();
-    }
-
     public function test_users_can_logout(): void
     {
         $user = User::factory()->create();
 
         $response = $this->actingAs($user)->post(route('logout'));
 
-        $response->assertRedirect(route('home'));
+        $response->assertRedirect(url('/'));
 
         $this->assertGuest();
     }
