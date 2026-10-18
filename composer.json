@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": "^8.3",
+        "php": "^8.4",
         "joshdaugherty/home-dashboard": "dev-main",
         "laravel/chisel": "^0.1.0",
         "laravel/fortify": "^1.37.2",
@@ -117,7 +117,7 @@
             "php-http/discovery": true
         },
         "platform": {
-            "php": "8.3.0"
+            "php": "8.4.0"
         }
     },
     "minimum-stability": "stable",
