@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31b2020c2e12b91903ad25e84fc4946b",
+    "content-hash": "4e11e67a8e2b7e4aaa2571d92e278034",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1214,16 +1214,16 @@
         },
         {
             "name": "joshdaugherty/home-dashboard",
-            "version": "v0.1.1",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joshdaugherty/home-dashboard.git",
-                "reference": "8d255f4d608cd6ffaa8f638d5e6e0c3385c40f03"
+                "reference": "feb367a38aed785ba635c8c3978d43596f63bf42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joshdaugherty/home-dashboard/zipball/8d255f4d608cd6ffaa8f638d5e6e0c3385c40f03",
-                "reference": "8d255f4d608cd6ffaa8f638d5e6e0c3385c40f03",
+                "url": "https://api.github.com/repos/joshdaugherty/home-dashboard/zipball/feb367a38aed785ba635c8c3978d43596f63bf42",
+                "reference": "feb367a38aed785ba635c8c3978d43596f63bf42",
                 "shasum": ""
             },
             "require": {
@@ -1276,7 +1276,7 @@
                 "issues": "https://github.com/joshdaugherty/home-dashboard/issues",
                 "source": "https://github.com/joshdaugherty/home-dashboard"
             },
-            "time": "2026-10-19T17:26:29+00:00"
+            "time": "2026-10-19T17:46:07+00:00"
         },
         {
             "name": "laravel/chisel",

@@ -7,5 +7,7 @@ return [
         'name' => 'dashboard',
         'middleware' => ['web', 'auth'],
     ],
+    // The dashboard's calendar and location settings live inside the app's own /settings area.
+    'settings_route' => 'dashboard.settings',
     'title' => env('DASHBOARD_TITLE', 'Home'),
 ];
