@@ -11,7 +11,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.4",
-        "joshdaugherty/home-dashboard": "^0.3",
+        "joshdaugherty/home-dashboard": "^0.4",
         "laravel/chisel": "^0.1.0",
         "laravel/fortify": "^1.37.2",
         "laravel/framework": "^13.17",

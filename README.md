@@ -9,8 +9,9 @@ This app owns authentication, the settings area, and the Cloud deployment config
 1. Create an application from this repo (branch `main`) with a database attached.
 2. Set environment variables: `APP_KEY`, `APP_ENV=production`, `APP_DEBUG=false`, `SESSION_DRIVER=database` (a custom variable that overrides Cloud's injected `cookie`), `SESSION_LIFETIME=525600` (a year, in minutes), `DASHBOARD_USER_EMAIL`, `DASHBOARD_USER_PASSWORD`, optionally `DASHBOARD_USER_NAME`.
 3. Optional: `DASHBOARD_NASA_KEY` (a free key from <https://api.nasa.gov>) adds NASA's Astronomy Picture of the Day to the Today background on alternate hours. Treat it like a password and set it as a Cloud custom variable, never in the repo.
-4. Build command (one line): `composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader && npm ci --audit false && npm run build`
-5. Deploy command (one line): `php artisan migrate --force && php artisan home-dashboard:user`
+4. Shopping and Meals (Notion): set `NOTION_TOKEN` (an internal integration secret from <https://www.notion.so/profile/integrations>, shared with the Home Dashboard page) as a Cloud custom variable. The database ids default to this household's workspace in `config/home-dashboard.php`; override them with `NOTION_AISLES`, `NOTION_ITEMS`, `NOTION_MEALS`, `NOTION_PLAN`. The package README describes the databases.
+5. Build command (one line): `composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader && npm ci --audit false && npm run build`
+6. Deploy command (one line): `php artisan migrate --force && php artisan home-dashboard:user`
 
 Calendars, people, location and units are **not** environment variables any more: enter them in the app (below). The `DASHBOARD_*` fallbacks in `.env.example` still work if nothing has been saved.
 
