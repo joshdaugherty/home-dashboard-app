@@ -1214,16 +1214,16 @@
         },
         {
             "name": "joshdaugherty/home-dashboard",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joshdaugherty/home-dashboard.git",
-                "reference": "10960495a9313c4c856e03408f61b23c99affe94"
+                "reference": "9afea763d2822fcdf864719552e4f117ea366b17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joshdaugherty/home-dashboard/zipball/10960495a9313c4c856e03408f61b23c99affe94",
-                "reference": "10960495a9313c4c856e03408f61b23c99affe94",
+                "url": "https://api.github.com/repos/joshdaugherty/home-dashboard/zipball/9afea763d2822fcdf864719552e4f117ea366b17",
+                "reference": "9afea763d2822fcdf864719552e4f117ea366b17",
                 "shasum": ""
             },
             "require": {
@@ -1276,7 +1276,7 @@
                 "issues": "https://github.com/joshdaugherty/home-dashboard/issues",
                 "source": "https://github.com/joshdaugherty/home-dashboard"
             },
-            "time": "2026-10-19T20:38:49+00:00"
+            "time": "2026-10-19T20:42:46+00:00"
         },
         {
             "name": "laravel/chisel",
