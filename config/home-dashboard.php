@@ -19,4 +19,11 @@ return [
         'meals' => env('NOTION_MEALS', 'c818f2e8-ed2e-4771-bf1d-fc5b7dc532f2'),
         'plan' => env('NOTION_PLAN', '61ef4fe5-4058-46a5-b1ee-d57c875f7777'),
     ],
+    // Items with no aisle are filed under the aisle this Kroger store keeps them in (Cantrell Marketplace, Little Rock).
+    // The client id and secret come from the environment only.
+    'kroger' => [
+        'client_id' => env('KROGER_CLIENT_ID'),
+        'client_secret' => env('KROGER_CLIENT_SECRET'),
+        'location_id' => env('KROGER_LOCATION_ID', '02500622'),
+    ],
 ];
