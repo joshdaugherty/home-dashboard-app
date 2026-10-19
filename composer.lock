@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "84077d32ad085cee316e1cd4397532a6",
+    "content-hash": "31b2020c2e12b91903ad25e84fc4946b",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1214,16 +1214,16 @@
         },
         {
             "name": "joshdaugherty/home-dashboard",
-            "version": "dev-main",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joshdaugherty/home-dashboard.git",
-                "reference": "2e2e6c8a1e05c7520ccbf3728a3cca6f15b49a10"
+                "reference": "8d255f4d608cd6ffaa8f638d5e6e0c3385c40f03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joshdaugherty/home-dashboard/zipball/2e2e6c8a1e05c7520ccbf3728a3cca6f15b49a10",
-                "reference": "2e2e6c8a1e05c7520ccbf3728a3cca6f15b49a10",
+                "url": "https://api.github.com/repos/joshdaugherty/home-dashboard/zipball/8d255f4d608cd6ffaa8f638d5e6e0c3385c40f03",
+                "reference": "8d255f4d608cd6ffaa8f638d5e6e0c3385c40f03",
                 "shasum": ""
             },
             "require": {
@@ -1236,7 +1236,6 @@
             "require-dev": {
                 "orchestra/testbench": "^11.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -1250,27 +1249,34 @@
                     "JoshDaugherty\\HomeDashboard\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "JoshDaugherty\\HomeDashboard\\Tests\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
+            "authors": [
+                {
+                    "name": "Josh Daugherty",
+                    "email": "15675878+joshdaugherty@users.noreply.github.com",
+                    "homepage": "https://github.com/joshdaugherty"
+                }
+            ],
             "description": "A responsive, touch-first family dashboard kiosk (Livewire + Flux) for a wall-mounted photo frame.",
+            "homepage": "https://github.com/joshdaugherty/home-dashboard",
             "keywords": [
+                "calendar",
                 "dashboard",
                 "flux",
+                "ical",
                 "kiosk",
                 "laravel",
-                "livewire"
+                "livewire",
+                "weather"
             ],
             "support": {
-                "source": "https://github.com/joshdaugherty/home-dashboard/tree/main",
-                "issues": "https://github.com/joshdaugherty/home-dashboard/issues"
+                "issues": "https://github.com/joshdaugherty/home-dashboard/issues",
+                "source": "https://github.com/joshdaugherty/home-dashboard"
             },
-            "time": "2026-10-19T17:19:59+00:00"
+            "time": "2026-10-19T17:26:29+00:00"
         },
         {
             "name": "laravel/chisel",
@@ -10814,9 +10820,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "joshdaugherty/home-dashboard": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
