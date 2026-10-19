@@ -12,23 +12,21 @@ class DashboardSettingsTest extends TestCase
 
     public function test_guests_are_redirected_to_the_login_page(): void
     {
-        $this->get(route('dashboard.settings'))->assertRedirect(route('login'));
+        foreach (['dashboard.people', 'dashboard.settings', 'dashboard.location'] as $name) {
+            $this->get(route($name))->assertRedirect(route('login'));
+        }
     }
 
-    public function test_dashboard_settings_are_embedded_in_the_settings_area(): void
+    public function test_each_section_has_its_own_page_inside_the_settings_area(): void
     {
         $this->actingAs(User::factory()->create());
 
-        $this->get(route('dashboard.settings'))
-            ->assertOk()
-            ->assertSee('Calendars')
-            ->assertSee('Location and weather')
-            // The app's own settings navigation is present around the form.
-            ->assertSee('Appearance')
-            ->assertDontSee('Back to dashboard');
+        $this->get(route('dashboard.people'))->assertOk()->assertSee('Add a person')->assertDontSee('Add a calendar')->assertSee('Appearance');
+        $this->get(route('dashboard.settings'))->assertOk()->assertSee('Add a calendar')->assertDontSee('Add a person');
+        $this->get(route('dashboard.location'))->assertOk()->assertSee('Find a place')->assertDontSee('Add a calendar');
     }
 
-    public function test_the_home_tab_links_to_the_embedded_page(): void
+    public function test_the_dashboard_settings_link_goes_to_the_calendars_page(): void
     {
         $this->assertSame(route('dashboard.settings'), route(config('home-dashboard.settings_route')));
     }

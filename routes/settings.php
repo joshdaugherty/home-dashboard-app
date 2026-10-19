@@ -7,7 +7,9 @@ Route::middleware(['auth'])->group(function () {
 
     Route::livewire('settings/profile', 'pages::settings.profile')->name('profile.edit');
 
-    Route::livewire('settings/dashboard', 'pages::settings.dashboard')->name('dashboard.settings');
+    Route::livewire('settings/people', 'pages::settings.people')->name('dashboard.people');
+    Route::livewire('settings/calendars', 'pages::settings.calendars')->name('dashboard.settings');
+    Route::livewire('settings/location', 'pages::settings.location')->name('dashboard.location');
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {
